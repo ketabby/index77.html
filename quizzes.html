@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Teacher's Dashboard</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="learners.html">Learners</a></li>
+                <li><a href="responses.html">Responses</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <h1>Create a New Quiz</h1>
+        <form id="createQuizForm">
+            <label for="quizTitle">Quiz Title:</label>
+            <input type="text" id="quizTitle" name="quizTitle" required>
+
+            <label for="quizQuestion">Question:</label>
+            <textarea id="quizQuestion" name="quizQuestion" required></textarea>
+
+            <label for="questionType">Question Type:</label>
+            <select id="questionType" name="questionType">
+                <option value="multiple-choice">Multiple Choice</option>
+                <option value="true-false">True/False</option>
+                <option value="short-answer">Short Answer</option>
+            </select>
+
+            <button type="submit">Create Quiz</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

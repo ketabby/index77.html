@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Teacher's Dashboard</div>
+        <nav>
+            <ul>
+                <li><a href="quizzes.html">Create Quiz</a></li>
+                <li><a href="learners.html">Learners</a></li>
+                <li><a href="responses.html">Responses</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+        <div class="login-form">
+            <form id="loginForm">
+                <input type="text" id="username" name="username" placeholder="Username">
+                <input type="password" id="password" name="password" placeholder="Password">
+                <input type="submit" value="Login">
+            </form>
+            <p id="error-message" style="color: red;"></p>
+        </div>
+    </header>
+    <div class="content">
+        <h1>Welcome to the Teacher's Dashboard</h1>
+        <p>Manage your quizzes, learners, and responses here.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
